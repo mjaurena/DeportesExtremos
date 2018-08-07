@@ -38,17 +38,28 @@ figure img {
 }
 
 #imagen1 {
-	-ms-transform: rotate(7deg); /* IE 9 */
-	-webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-	transform: rotate(7deg);
+	perspective: 2000px;
+	-webkit-perspective: 2000px;
 }
+
+#imagen1 img {
+	transform: rotateY(40deg);
+}
+
 #imagen2 {
-	-ms-transform: rotate(90deg); /* IE 9 */
-	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-	transform: rotate(90deg);
+	perspective: 3000px;
+	-webkit-perspective: 3000px;
 }
+
+#imagen2 img {
+	transform: rotateY(-30deg);
+}
+
 #imagen3 {
-	-ms-transform: rotate(-10deg); /* IE 9 */
-	-webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
-	transform: rotate(-10deg);
+	-webkit-perspective: 100px;
+	perspective: 100px;
+}
+
+#imagen3 img {
+	transform: rotateX(40deg);
 }
