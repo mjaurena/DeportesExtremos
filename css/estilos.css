@@ -36,30 +36,26 @@ figure {
 figure img {
 	width: 420px;
 }
-
-#imagen1 {
-	perspective: 2000px;
-	-webkit-perspective: 2000px;
-}
-
 #imagen1 img {
-	transform: rotateY(40deg);
-}
+	transition-property: border;
+	transition-duration: 0.5s;
 
-#imagen2 {
-	perspective: 3000px;
-	-webkit-perspective: 3000px;
 }
-
+#imagen1 img:hover{
+	border: 4px solid black;
+}
 #imagen2 img {
-	transform: rotateY(-30deg);
+	opacity: 0.1;
+	transition: opacity 1s;
 }
 
-#imagen3 {
-	-webkit-perspective: 100px;
-	perspective: 100px;
+#imagen2 img:hover{
+	opacity: 1;
 }
 
-#imagen3 img {
-	transform: rotateX(40deg);
+#imagen3 img{
+	transition: width 0.5s;
+}
+#imagen3 img:hover{
+	width: 60%;
 }
